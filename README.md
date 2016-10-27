@@ -1,4 +1,3 @@
-# Kylin
 
 <h3>Campgrounds Review Website</h3>
 <p>Designed a web page for users to review, add and edit information about campgrounds and related comments.</p>
