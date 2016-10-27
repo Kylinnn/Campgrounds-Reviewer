@@ -13,6 +13,7 @@ var indexRoutes = require("./routes/index");
 var commentRoutes = require("./routes/comments");
 var campgroundRoutes = require("./routes/campgrounds");
 
+// Configurations
 mongoose.connect("mongodb://localhost/yelp_camp");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -21,9 +22,8 @@ app.use(methodOverride("_method"));
 app.use(flash());
 // seedDB();
 
-// Passport Configuration
 app.use(require("express-session")({
-    secret: "Arthas Menethill",
+    secret: "Secret Page",
     resave: false,
     saveUninitialized: false
 }));
